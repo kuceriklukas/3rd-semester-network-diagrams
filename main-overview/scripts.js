@@ -12,7 +12,7 @@ var nodes = new vis.DataSet([
     { id: 8, label: "Borgerforslag", shape: "ellipse" },
     { id: 9, label: "Advokatnølgen", shape: "ellipse" },
     { id: 10, label: "Det centrale\nhusdyrbrugssregister", shape: "ellipse" },
-    { id: 11, label: "Forskningsdatabasen", shape: "ellipse" },
+    { id: 11, label: "Forsknings\ndatabasen", shape: "ellipse" },
     { id: 12, label: "Jobnet.dk", shape: "ellipse" },
     { id: 13, label: "Domstol", shape: "ellipse" },
     { id: 14, label: "Arbejdstilsynet", shape: "ellipse" },
@@ -128,9 +128,29 @@ var edges = new vis.DataSet([
     { from: 11, to: 38, arrows: "to", color: { color: "blue" } },
     { from: 11, to: 29, arrows: "to", color: { color: "blue" } },
 
-    // TODO from here 
-    // { from: 12, to: 47, arrows: "from", color: { color: "red" } },
-    // { from: 12, to: 22, arrows: "to", color: { color: "blue" } },
+    { from: 12, to: 47, arrows: "from", color: { color: "red" } },
+    { from: 12, to: 32, arrows: "from", color: { color: "red" } },
+    { from: 12, to: 26, arrows: "from", color: { color: "red" } },
+    { from: 12, to: 20, arrows: "from", color: { color: "red" } },
+    { from: 12, to: 25, arrows: "from", color: { color: "red" } },
+    { from: 12, to: 22, arrows: "to", color: { color: "blue" } },
+    { from: 12, to: 32, arrows: "to", color: { color: "blue" } },
+    { from: 12, to: 36, arrows: "to", color: { color: "blue" } },
+    { from: 12, to: 37, arrows: "to", color: { color: "blue" } },
+    { from: 12, to: 38, arrows: "to", color: { color: "blue" } },
+
+    // Domstol
+    // Change: Combined the names of judges, defendats, etc. into name + profession 
+    // Removed: case id, brief description about the case
+    { from: 13, to: 47, arrows: "from", color: { color: "red" } },
+    { from: 13, to: 44, arrows: "from", color: { color: "red" } },
+    { from: 13, to: 20, arrows: "from", color: { color: "red" } },
+    { from: 13, to: 22, arrows: "to", color: { color: "blue" } },
+    { from: 13, to: 26, arrows: "to", color: { color: "blue" } },
+    
+    // Arbejdstilsynet
+    // Removed: Safety rating
+    { from: 14, to: 40, arrows: "to", color: { color: "blue" } },
 
 ]);
 
