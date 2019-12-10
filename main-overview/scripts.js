@@ -31,7 +31,7 @@ var nodes = new vis.DataSet([
     { id: 29, label: "Facial Image", shape: "box", color: "#C2FABC" },
     { id: 30, label: "Age Group", shape: "box", color: "#C2FABC" },
     { id: 31, label: "Department/Party", shape: "box", color: "#C2FABC" },
-
+    { id: 32, label: "Birthdate", shape: "box", color: "#C2FABC" },
 
     { id: 34, label: "Jurisdiction", shape: "box", color: "#C2FABC" },
 
@@ -53,23 +53,28 @@ var nodes = new vis.DataSet([
 
 // create an array with edges
 var edges = new vis.DataSet([
+
+    // dawa.dk
     { from: 1, to: 20, arrows: "from", color: { color: "red" }},
     { from: 1, to: 21, arrows: "from", color: { color: "red" }},
     { from: 1, to: 20, arrows: "to", color: { color: "blue" }},
     { from: 1, to: 21, arrows: "to", color: { color: "blue" }},
 
+    // Tinglysning
     { from: 2, to: 21, arrows: "from", color: { color: "red" } },
     { from: 2, to: 21, arrows: "to", color: { color: "blue" } },
     { from: 2, to: 22, arrows: "to", color: { color: "blue" } },
     { from: 2, to: 39, arrows: "to", color: { color: "blue" } },
     { from: 2, to: 40, arrows: "to", color: { color: "blue" } },
 
+    // Statstidende
     { from: 3, to: 22, arrows: "from", color: { color: "red" } },
     { from: 3, to: 46, arrows: "from", color: { color: "red" } },
     { from: 3, to: 22, arrows: "to", color: { color: "blue" } },
     { from: 3, to: 25, arrows: "to", color: { color: "blue" } },
     { from: 3, to: 43, arrows: "to", color: { color: "blue" } },
 
+    // CVR
     { from: 4, to: 21, arrows: "from", color: { color: "red" } },
     { from: 4, to: 22, arrows: "from", color: { color: "red" } },
     { from: 4, to: 40, arrows: "from", color: { color: "red" } },
@@ -77,6 +82,7 @@ var edges = new vis.DataSet([
     { from: 4, to: 39, arrows: "to", color: { color: "blue" } },
     { from: 4, to: 43, arrows: "to", color: { color: "blue" } },
 
+    // Sogn.dk
     { from: 5, to: 47, arrows: "from", color: { color: "red" } },
     { from: 5, to: 22, arrows: "from", color: { color: "red" } },
     { from: 5, to: 21, arrows: "from", color: { color: "red" } },
@@ -85,6 +91,7 @@ var edges = new vis.DataSet([
     { from: 5, to: 37, arrows: "to", color: { color: "blue" } },
     { from: 5, to: 26, arrows: "to", color: { color: "blue" } },
 
+    // Sundhed.dk
     { from: 6, to: 47, arrows: "from", color: { color: "red" } },
     { from: 6, to: 20, arrows: "from", color: { color: "red" } },
     { from: 6, to: 27, arrows: "from", color: { color: "red" } },
@@ -97,6 +104,7 @@ var edges = new vis.DataSet([
     { from: 6, to: 27, arrows: "to", color: { color: "blue" } },
     { from: 6, to: 30, arrows: "to", color: { color: "blue" } },
 
+    // Folketingets telefonbog
     { from: 7, to: 22, arrows: "from", color: { color: "red" } },
     { from: 7, to: 31, arrows: "from", color: { color: "red" } },
     { from: 7, to: 26, arrows: "from", color: { color: "red" } },
@@ -106,11 +114,13 @@ var edges = new vis.DataSet([
     { from: 7, to: 37, arrows: "to", color: { color: "blue" } },
     { from: 7, to: 29, arrows: "to", color: { color: "blue" } },
 
+    // Borgerforslag
     { from: 8, to: 47, arrows: "from", color: { color: "red" } },
     { from: 8, to: 22, arrows: "to", color: { color: "blue" } },
     { from: 8, to: 23, arrows: "to", color: { color: "blue" } },
     { from: 8, to: 24, arrows: "to", color: { color: "blue" } },
 
+    // Advokatnølgen
     { from: 9, to: 22, arrows: "from", color: { color: "red" } },
     { from: 9, to: 40, arrows: "from", color: { color: "red" } },
     { from: 9, to: 34, arrows: "from", color: { color: "red" } },
@@ -124,6 +134,7 @@ var edges = new vis.DataSet([
     { from: 9, to: 38, arrows: "to", color: { color: "blue" } },
     { from: 9, to: 44, arrows: "to", color: { color: "blue" } },
     
+    // Det centrale husdyrbrugssregister
     { from: 10, to: 22, arrows: "from", color: { color: "red" } },
     { from: 10, to: 21, arrows: "from", color: { color: "red" } },
     { from: 10, to: 22, arrows: "to", color: { color: "blue" } },
@@ -131,6 +142,7 @@ var edges = new vis.DataSet([
     { from: 10, to: 21, arrows: "to", color: { color: "blue" } },
     { from: 10, to: 39, arrows: "to", color: { color: "blue" } },
 
+    // Forskningsdatabasen
     { from: 11, to: 47, arrows: "from", color: { color: "red" } },
     { from: 11, to: 22, arrows: "from", color: { color: "red" } },
     { from: 11, to: 45, arrows: "from", color: { color: "red" } },
@@ -141,6 +153,7 @@ var edges = new vis.DataSet([
     { from: 11, to: 37, arrows: "to", color: { color: "blue" } },
     { from: 11, to: 29, arrows: "to", color: { color: "blue" } },
 
+    // Jobnet.dk
     { from: 12, to: 47, arrows: "from", color: { color: "red" } },
     { from: 12, to: 26, arrows: "from", color: { color: "red" } },
     { from: 12, to: 20, arrows: "from", color: { color: "red" } },
@@ -157,10 +170,31 @@ var edges = new vis.DataSet([
     { from: 13, to: 26, arrows: "to", color: { color: "blue" } },
     
     // Arbejdstilsynet
-    // Removed: Safety rating
     { from: 14, to: 40, arrows: "from", color: { color: "red" } },
     { from: 14, to: 40, arrows: "to", color: { color: "blue" } },
 
+    // Autorisationsregistret
+    { from: 15, to: 22, arrows: "from", color: { color: "red" } },
+    { from: 15, to: 28, arrows: "from", color: { color: "red" } },
+    { from: 15, to: 49, arrows: "from", color: { color: "red" } },
+    { from: 15, to: 26, arrows: "from", color: { color: "red" } },
+    { from: 15, to: 32, arrows: "from", color: { color: "red" } },
+    { from: 15, to: 22, arrows: "to", color: { color: "blue" } },
+    { from: 15, to: 28, arrows: "to", color: { color: "blue" } },
+    { from: 15, to: 49, arrows: "to", color: { color: "blue" } },
+    { from: 15, to: 26, arrows: "to", color: { color: "blue" } },
+    { from: 15, to: 32, arrows: "to", color: { color: "blue" } },
+
+    // DK-hostmaster
+    { from: 16, to: 48, arrows: "from", color: { color: "red" } },
+    { from: 16, to: 22, arrows: "to", color: { color: "blue" } },
+    { from: 16, to: 40, arrows: "to", color: { color: "blue" } },
+    { from: 16, to: 21, arrows: "to", color: { color: "blue" } },
+    { from: 16, to: 39, arrows: "to", color: { color: "blue" } },
+    { from: 16, to: 24, arrows: "to", color: { color: "blue" } },
+    { from: 16, to: 37, arrows: "to", color: { color: "blue" } },
+    { from: 16, to: 23, arrows: "to", color: { color: "blue" } },
+    { from: 16, to: 38, arrows: "to", color: { color: "blue" } },
 ]);
 
 
